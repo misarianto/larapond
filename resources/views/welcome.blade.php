@@ -11,8 +11,15 @@
         <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
     </head>
     <body class="antialiased">
-        
 
         <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+
+        <script>
+            // Get a reference to the file input element
+            const inputElement = document.querySelector('input[type="file"]');
+        
+            // Create a FilePond instance
+            const pond = FilePond.create(inputElement);
+        </script>
     </body>
 </html>
